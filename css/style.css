@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: 'superscript';
+    src:url('../font/superscript.ttf.woff') format('woff'),
+        url('../font/superscript.ttf.svg#superscript') format('svg'),
+        url('../font/superscript.ttf.eot'),
+        url('../font/superscript.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.counter {
+  font-family: 'superscript', Arial, sans-serif;
+  font-size: 22px;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.mobileControls {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 3;
+}
+
+.mobileControls__button {
+  font-family: 'superscript', Arial, sans-serif;
+  width: 60px;
+  height: 60px;
+  background: #ff4623;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .mobileControls {
+    display: flex;
+  }
+
+  .counter {
+    display: none;
+  }
+}
