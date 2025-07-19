@@ -1,6 +1,6 @@
 # 🏔️ Adventure Game
 
-![Game Screenshot](./Screenshot%202025-07-19%20183017.png)
+![Game Screenshot] <img width="1911" height="888" alt="Screenshot 2025-07-19 183017" src="https://github.com/user-attachments/assets/239fbce6-e89d-4733-b1d1-a9bb4ee659ea" />
 
 A simple pixel-art style adventure platformer game built with HTML5, CSS3, and JavaScript. The player jumps from one floating platform to another in a serene forest sky environment.
 
